@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:riverpod_api/features/home/data/models/joke_model.dart';
+import 'package:riverpod_api/features/joke/data/models/joke_model.dart';
 
 part 'joke_state.freezed.dart';
 

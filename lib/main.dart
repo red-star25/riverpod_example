@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
+        debugShowCheckedModeBanner: false,
         home: const HomePage(),
         initialRoute: Routes.home,
         routes: AppRoutes.routes,

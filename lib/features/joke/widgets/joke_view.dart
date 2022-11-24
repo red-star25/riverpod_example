@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riverpod_api/features/home/data/models/joke_model.dart';
+import 'package:riverpod_api/features/joke/data/models/joke_model.dart';
 
 class JokeView extends StatelessWidget {
   const JokeView({

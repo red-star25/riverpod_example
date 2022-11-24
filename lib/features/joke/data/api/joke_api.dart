@@ -1,12 +1,12 @@
 import 'package:riverpod_api/core/network/constant/endpoints.dart';
 import 'package:riverpod_api/core/network/dio_client.dart';
 
-class HomeApi {
+class JokeApi {
   // dio instance
   final DioClient _dioClient;
 
   // injecting dio instance
-  HomeApi(this._dioClient);
+  JokeApi(this._dioClient);
 
   Future<Map<String, dynamic>> fetchJokesApiRequest() async {
     try {

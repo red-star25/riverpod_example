@@ -2,17 +2,17 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:riverpod_api/core/network/dio_exceptions.dart';
-import 'package:riverpod_api/features/home/data/api/home_api.dart';
-import 'package:riverpod_api/features/home/data/models/joke_model.dart';
+import 'package:riverpod_api/features/joke/data/api/joke_api.dart';
+import 'package:riverpod_api/features/joke/data/models/joke_model.dart';
 
-class HomeRepository {
-  final HomeApi _homeApi;
+class JokeRepository {
+  final JokeApi _jokeApi;
 
-  HomeRepository(this._homeApi);
+  JokeRepository(this._jokeApi);
 
   Future<JokeModel> fetchJoke() async {
     try {
-      final res = await _homeApi.fetchJokesApiRequest();
+      final res = await _jokeApi.fetchJokesApiRequest();
       final jokeModel = JokeModel.fromJson(res);
       return jokeModel;
     } on DioError catch (e) {

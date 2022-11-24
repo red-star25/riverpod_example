@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_api/features/home/provider/home_provider.dart';
+import 'package:riverpod_api/features/joke/provider/joke_provider.dart';
 
 class RefreshJoke extends ConsumerWidget {
   const RefreshJoke({
