@@ -14,6 +14,6 @@ final jokeRepositoryProvider = Provider<JokeRepository>((ref) {
 });
 
 final jokeDataProvider =
-    StateNotifierProvider<JokeDataNotifier, JokeState>((ref) {
+    StateNotifierProvider.autoDispose<JokeDataNotifier, JokeState>((ref) {
   return JokeDataNotifier(ref.read(jokeRepositoryProvider));
 });

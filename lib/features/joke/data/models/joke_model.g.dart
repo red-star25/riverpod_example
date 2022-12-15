@@ -7,14 +7,12 @@ part of 'joke_model.dart';
 // **************************************************************************
 
 _$_JokeModel _$$_JokeModelFromJson(Map<String, dynamic> json) => _$_JokeModel(
-      delivery: json['delivery'] as String?,
+      joke: json['joke'] as String?,
       id: json['id'] as int?,
-      setup: json['setup'] as String?,
     );
 
 Map<String, dynamic> _$$_JokeModelToJson(_$_JokeModel instance) =>
     <String, dynamic>{
-      'delivery': instance.delivery,
+      'joke': instance.joke,
       'id': instance.id,
-      'setup': instance.setup,
     };

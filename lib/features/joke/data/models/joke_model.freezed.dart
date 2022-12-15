@@ -20,9 +20,8 @@ JokeModel _$JokeModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$JokeModel {
-  String? get delivery => throw _privateConstructorUsedError;
+  String? get joke => throw _privateConstructorUsedError;
   int? get id => throw _privateConstructorUsedError;
-  String? get setup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -35,7 +34,7 @@ abstract class $JokeModelCopyWith<$Res> {
   factory $JokeModelCopyWith(JokeModel value, $Res Function(JokeModel) then) =
       _$JokeModelCopyWithImpl<$Res, JokeModel>;
   @useResult
-  $Res call({String? delivery, int? id, String? setup});
+  $Res call({String? joke, int? id});
 }
 
 /// @nodoc
@@ -51,23 +50,18 @@ class _$JokeModelCopyWithImpl<$Res, $Val extends JokeModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? delivery = freezed,
+    Object? joke = freezed,
     Object? id = freezed,
-    Object? setup = freezed,
   }) {
     return _then(_value.copyWith(
-      delivery: freezed == delivery
-          ? _value.delivery
-          : delivery // ignore: cast_nullable_to_non_nullable
+      joke: freezed == joke
+          ? _value.joke
+          : joke // ignore: cast_nullable_to_non_nullable
               as String?,
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
-      setup: freezed == setup
-          ? _value.setup
-          : setup // ignore: cast_nullable_to_non_nullable
-              as String?,
     ) as $Val);
   }
 }
@@ -79,7 +73,7 @@ abstract class _$$_JokeModelCopyWith<$Res> implements $JokeModelCopyWith<$Res> {
       __$$_JokeModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? delivery, int? id, String? setup});
+  $Res call({String? joke, int? id});
 }
 
 /// @nodoc
@@ -93,23 +87,18 @@ class __$$_JokeModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? delivery = freezed,
+    Object? joke = freezed,
     Object? id = freezed,
-    Object? setup = freezed,
   }) {
     return _then(_$_JokeModel(
-      delivery: freezed == delivery
-          ? _value.delivery
-          : delivery // ignore: cast_nullable_to_non_nullable
+      joke: freezed == joke
+          ? _value.joke
+          : joke // ignore: cast_nullable_to_non_nullable
               as String?,
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
-      setup: freezed == setup
-          ? _value.setup
-          : setup // ignore: cast_nullable_to_non_nullable
-              as String?,
     ));
   }
 }
@@ -117,21 +106,19 @@ class __$$_JokeModelCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_JokeModel implements _JokeModel {
-  const _$_JokeModel({this.delivery, this.id, this.setup});
+  const _$_JokeModel({this.joke, this.id});
 
   factory _$_JokeModel.fromJson(Map<String, dynamic> json) =>
       _$$_JokeModelFromJson(json);
 
   @override
-  final String? delivery;
+  final String? joke;
   @override
   final int? id;
-  @override
-  final String? setup;
 
   @override
   String toString() {
-    return 'JokeModel(delivery: $delivery, id: $id, setup: $setup)';
+    return 'JokeModel(joke: $joke, id: $id)';
   }
 
   @override
@@ -139,15 +126,13 @@ class _$_JokeModel implements _JokeModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_JokeModel &&
-            (identical(other.delivery, delivery) ||
-                other.delivery == delivery) &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.setup, setup) || other.setup == setup));
+            (identical(other.joke, joke) || other.joke == joke) &&
+            (identical(other.id, id) || other.id == id));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, delivery, id, setup);
+  int get hashCode => Object.hash(runtimeType, joke, id);
 
   @JsonKey(ignore: true)
   @override
@@ -164,20 +149,15 @@ class _$_JokeModel implements _JokeModel {
 }
 
 abstract class _JokeModel implements JokeModel {
-  const factory _JokeModel(
-      {final String? delivery,
-      final int? id,
-      final String? setup}) = _$_JokeModel;
+  const factory _JokeModel({final String? joke, final int? id}) = _$_JokeModel;
 
   factory _JokeModel.fromJson(Map<String, dynamic> json) =
       _$_JokeModel.fromJson;
 
   @override
-  String? get delivery;
+  String? get joke;
   @override
   int? get id;
-  @override
-  String? get setup;
   @override
   @JsonKey(ignore: true)
   _$$_JokeModelCopyWith<_$_JokeModel> get copyWith =>

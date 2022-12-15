@@ -3,7 +3,7 @@ import 'package:riverpod_api/core/shared_provider/shared_providers.dart';
 import 'package:riverpod_api/features/products/data/api/product_api.dart';
 import 'package:riverpod_api/features/products/data/model/product_model.dart';
 import 'package:riverpod_api/features/products/data/repository/product_repository.dart';
-import 'package:riverpod_api/features/products/provider/product_state_provider.dart';
+import 'package:riverpod_api/features/products/provider/product_state_notifier.dart';
 
 final productApiProvider = Provider<ProductApi>((ref) {
   return ProductApi(ref.read(dioClientProvider));

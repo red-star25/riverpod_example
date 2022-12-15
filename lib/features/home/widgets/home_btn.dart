@@ -13,6 +13,7 @@ class HomeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 80.h,
+      width: MediaQuery.of(context).size.width * .8,
       child: ElevatedButton(onPressed: onTap, child: Text(title)),
     );
   }

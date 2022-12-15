@@ -10,7 +10,7 @@ class JokeApi {
 
   Future<Map<String, dynamic>> fetchJokesApiRequest() async {
     try {
-      final res = await _dioClient.get(Endpoints.baseUrl);
+      final res = await _dioClient.get(Endpoints.jokes);
       return res.data;
     } catch (e) {
       rethrow;

@@ -16,9 +16,10 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             HomeButton(
-                title: 'joke'.tr(),
+                title: 'jokes'.tr(),
                 onTap: () {
                   Navigator.of(context).pushNamed(Routes.joke);
                 }),

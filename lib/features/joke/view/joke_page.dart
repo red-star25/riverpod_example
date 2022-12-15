@@ -20,7 +20,7 @@ class JokePage extends ConsumerWidget {
           ? const Center(
               child: CircularProgressIndicator(),
             )
-          : JokeView(joke: joke),
+          : JokeView(jokeData: joke),
     );
   }
 }

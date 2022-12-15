@@ -6,9 +6,8 @@ part 'joke_model.g.dart';
 @freezed
 class JokeModel with _$JokeModel {
   const factory JokeModel({
-    String? delivery,
+    String? joke,
     int? id,
-    String? setup,
   }) = _JokeModel;
   factory JokeModel.fromJson(Map<String, dynamic> json) =>
       _$JokeModelFromJson(json);
